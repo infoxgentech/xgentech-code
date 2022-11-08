@@ -1,0 +1,24 @@
+[[headers]]
+  for = "/*.woff"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/font-woff"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/font-woff2"
+
+[build]
+  publish = ".next"
+
+[build.environment]
+  NPM_CONFIG_USERCONFIG = "./.netlify/.npmrc"
+  NETLIFY_USE_YARN = "true"
+  YARN_FLAGS = "--frozen-lockfile"
+  YARN_VERSION = "1.22.5"
+  NODE_VERSION = "16"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

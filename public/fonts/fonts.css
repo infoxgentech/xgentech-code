@@ -1,0 +1,15 @@
+/*
+
+Add custom font-face declarations in this file. Font files should be included in this directory.
+
+Example:
+
+@font-face {
+  font-family: 'Roboto, system-ui, sans-serif';
+  src: url('roboto.woff2') format('woff2'), url('roboto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+
+*/

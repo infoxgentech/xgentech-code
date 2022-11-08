@@ -1,0 +1,208 @@
+{
+  "all_products": "All Products",
+  "not_found": "Page not found.",
+  "your_email": "Your email",
+  "cart": {
+    "page_title": "Cart",
+    "empty": "Nothing to see here yet.",
+    "shop_button": "Explore the shop",
+    "subtotal": "Subtotal",
+    "estimated_total": "Estimated Total",
+    "store_credit": "Available store credit",
+    "total": "Total",
+    "tax": "Tax",
+    "shipping": "Shipping",
+    "calculated_at_checkout": " (calculated at checkout)",
+    "apply_promo_code": "+ Apply promo code",
+    "apply_promo_code_button": "apply",
+    "remove_promo_code_button": "remove",
+    "checkout": "Checkout",
+    "checkout_terminal": "Checkout via Terminal",
+    "promo_code": "Promo Code",
+    "gift_card": "Gift Card",
+    "apply_gift_card": "+ Apply gift card",
+    "apply_gift_card_button": "apply",
+    "remove_gift_card_button": "remove",
+    "title": "Cart",
+    "order_summary": "Order Summary",
+    "your_items": "Your Items",
+    "free_shipping": "Free",
+    "shipping_banner_not_free": "Spend {amount} more for free shipping.",
+    "shipping_banner_free": "You've qualified for free shipping!"
+  },
+  "checkout": {
+    "cancel": "Cancel",
+    "disconnect": "Disconnect From Reader",
+    "start_payment": "Start Payment",
+    "update_order": "Update Order",
+    "updating_order": "Updating Order",
+    "processing": "Processing",
+    "change_location": "Change Location"
+  },
+  "confirmation": {
+    "page_title": "Thanks for your order",
+    "title": "Thanks for your order",
+    "text": "Order No. ",
+    "error": "This page has expired. Please check your email for your order summary.",
+    "contact": {
+      "title": "Something not right?",
+      "text": "Contact our customer service team at"
+    },
+    "details": {
+      "title": "confirmation",
+      "subtitle": "You should receive it in the next few minutes. If you don't see it, try checking your spam folder.",
+      "text": "An email is on its way to ",
+      "shipping": "shipping to",
+      "payment": "payment method"
+    },
+    "add_to_order": "Add to order",
+    "limited_offer": "Limited time offer",
+    "limited_offer_text": "Grab these additional items at {off_text} off. Offer expires in "
+  },
+  "product": {
+    "related_products": "More Great Products to Love",
+    "filter_collections": "Filter by collection",
+    "all_collections": "All",
+    "singular": "product",
+    "plural": "products",
+    "ingredients_list": "View Full Ingredients List",
+    "add_to_cart": "Add to cart",
+    "added_to_cart": "Added to cart",
+    "coming_soon": "Coming Soon",
+    "sold_out": "Out of Stock",
+    "notify_when_available": "Enter your email below to be notified when this product becomes available again.",
+    "notify_me": "Notify me",
+    "notify_when_available_thank_you": "You're all set, we will email you when this product is back in stock and available for purchase.",
+    "included_products": "Included Products:",
+    "how_to_use": "How to use",
+    "choose_variant": "Choose a variant",
+    "choose_kit": "Choose a kit"
+  },
+  "validation": {
+    "required_field": "This field is required",
+    "invalid_email": "Hmm, looks like that email address isn’t valid. Please try again."
+  },
+  "collections": {
+    "title": "COLLECTIONS",
+    "shop_button": "EXPLORE"
+  },
+  "footer": {
+    "newsletter_signup": {
+      "title": "Stay posted",
+      "text": "Subscribe to our newsletter to receive updates on new launches, learnings, events and more.",
+      "input_label": "Your email",
+      "button": "submit",
+      "confirmation": "Thanks for signing up!"
+    },
+    "contact": {
+      "title": "Contact",
+      "general_inquiries": "General inquiries",
+      "press_inquiries": "Press inquiries"
+    },
+    "shop": {
+      "title": "Shop",
+      "shop_all": "All Products"
+    },
+    "company": {
+      "title": "Company"
+    },
+    "dataconsent": {
+      "title": "Data Collection and Cookie Preferences"
+    }
+  },
+  "navigation": {
+    "cart": "Cart",
+    "menu": "Menu"
+  },
+  "error": {
+    "not_found": {
+      "page_title": "Not found",
+      "title": "This page is cooling off somewhere",
+      "text": "Hit the button below to head back to our ",
+      "text_homepage_link": "homepage",
+      "cta": "Shop Products"
+    },
+    "api": {
+      "default": "An unexpected error occurred."
+    }
+  },
+  "articles": {
+    "author_by": "By"
+  },
+  "login": {
+    "page_title": "Login",
+    "sign_in": "Sign In"
+  },
+  "account": {
+    "page_title": "Account",
+    "edit_profile": "Edit profile",
+    "subscriptions": "Subscriptions",
+    "logout": "Logout"
+  },
+  "profile": {
+    "page_title": "Edit Profile",
+    "email_input_label": "Email",
+    "submit_button": "Update profile"
+  },
+  "subscriptions": {
+    "page_title": "Subscriptions",
+    "one_time_purchase": "One-time purchase",
+    "subscribe": "Subscribe",
+    "items": "Items: {total_price} ({quantity} x {unit_price})",
+    "auto_renew_interval": "Auto-renew: every {length} {unit}",
+    "ends": "Ends on: {date}",
+    "remove_from_cart": "Remove",
+    "no_subscriptions_yet": "Looks like you don't have any subscriptions yet.",
+    "skip": "Skip",
+    "cancel": "Cancel",
+    "pause": "Pause",
+    "pause_until": "Pause until: (Optional)",
+    "resume_at": "Resume at: (Optional)",
+    "resume": "Resume",
+    "action_date": "Next: {action_date}",
+    "status": "Status: {status}",
+    "products": "Products",
+    "shipping": "Shipping",
+    "billing": "Billing",
+    "next_shipment": "Next Shipment:",
+    "cancelled": "Cancelled",
+    "payment_method": "Payment Method:",
+    "details": "Subscription Details",
+    "remove": "Remove",
+    "edit": "Edit",
+    "creation_date": "Creation Date: {date}",
+    "renewal_date": "Renewal Date: {date}",
+    "interval": "Interval: {interval}",
+    "manage": "Manage Subscription"
+  },
+  "subscription_details": {
+    "page_title": "Subscription Details"
+  },
+  "address": {
+    "name": "Name",
+    "address1": "Address Line 1",
+    "address2": "Address Line 2",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "zip": "Zipcode",
+    "cancel": "Cancel"
+  },
+  "referral": {
+    "title": "Refer a friend?",
+    "subtitle": "15% off their first order",
+    "text": "Share this link and your friends get a 15% discount on their order. To sweeten the deal, you'll receive a credit when they make their first purchase too.",
+    "copy_link_input_label": "Your referral link",
+    "copy_link_button": "copy link",
+    "copy_link_button_clicked": "copied"
+  },
+  "gift_card": {
+    "gift_card": "Gift Card",
+    "name": "Recipient's name",
+    "gift_message": "Gift message (optional)",
+    "email": "Recipient's email (required)",
+    "date": "Date to send",
+    "gift_recipients_missing": "Gift card recipients missing email",
+    "gift_recipients": "Continue to gift recipients"
+  }
+}
