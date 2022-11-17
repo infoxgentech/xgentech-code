@@ -12,9 +12,14 @@ const useVariantAvailability = ({ sku }) => {
 
   const { data, error } = useSWR(query, fetcher)
 
+  // console.log("Data", query);
+
+  // console.log("error", error);
+
   // Start by assuming that the product is available. And if something
   // wrong happened in this hook, worse case scenario, it will be handled
   // by Chord's checkout.
+  
   return {
     isAvailable: data ? data.in_stock || data.is_backorderable : true,
     isFetchingAvailability: !error && !data,

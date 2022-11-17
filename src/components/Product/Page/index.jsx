@@ -71,6 +71,7 @@ const ProductPage = ({ product }) => {
             }}
             handleVariantChange={variant => setVariant(variant)}
           />
+          
         </Flex>
       </Container>
       <Container variant="fullWidth">

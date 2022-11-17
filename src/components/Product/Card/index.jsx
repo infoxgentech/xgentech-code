@@ -3,18 +3,29 @@ import ResponsiveImage from '~/components/Generic/Image'
 import { Box, Card, Flex, Heading } from 'theme-ui'
 import ProductAddToCartButton from '~/components/Product/AddToCartButton'
 import ProductChooseVariantButton from '~/components/Product/ChooseVariantButton'
+import ProductQuantitySelector from '~/components/Product/QuantitySelector'
 import ProductLink from '~/components/Product/Link'
+import SubscriptionChooser from '~/components/Subscription/Chooser'
+
 // import dynamic from 'next/dynamic';
 
 // const ProductDetails = dynamic(() => import('~/components/Product/Details'))
 
 const ProductCard = ({ product }) => {
-  const { mainImage, name, shortDescription } = product
-  const { items: variants } = product.variantsCollection
+  
+  const { mainImage, name, shortDescription , subscription } = product
+  // const { items: variants } = product.variantsCollection
   // const [variant, setVariant] = useState(variants)
 
   // each product have at least one variant (enforced by Contentful model)
-  const { price, regularPrice, size, sku } = variants[0]
+
+
+  const { items: optionTypes } = product.variantsCollection || []
+  const { items: variants } = product.variantsCollection || []
+  
+  const { price, regularPrice, size, sku } = variants[0];
+
+  // get all the available choices from the variants
 
   return (
     <Card
@@ -70,17 +81,7 @@ const ProductCard = ({ product }) => {
           </ProductLink>
         </Flex>
       </Flex>
-      {/* <Box>
-      <ProductDetails
-            product={product}
-            sx={{
-              maxWidth: ['100%', '100%', '50%'],
-              paddingLeft: ['1rem', null, '2rem'],
-              paddingRight: ['1rem', null, '2rem']
-            }}
-            handleVariantChange={variant => setVariant(variant)}
-          />
-      </Box> */}
+      
       <Box>
         <Flex
           color="primary"
@@ -100,9 +101,8 @@ const ProductCard = ({ product }) => {
               {size}
             </ProductLink>
           )}
-
         </Flex>
-        {variants.length === 1 ? (
+        {/* {variants.length === 1 ? (
           <ProductAddToCartButton
             price={price}
             quantity={1}
@@ -112,6 +112,42 @@ const ProductCard = ({ product }) => {
           />
         ) : (
           <ProductChooseVariantButton product={product} />
+        )} */}
+        {/* {optionTypes && (
+            <ProductOptions
+              allOptions={allowedOptionTypes}
+              currentValues={currentVariant.optionValuesCollection.items}
+              handleChange={option => selectVariant(option)}
+            />
+            <h1>testdemo</h1>
+          )} */}
+          {subscription ? (
+          <SubscriptionChooser
+            subscription={subscription}
+            regularPrice={regularPrice}
+            price={price}
+            sku={sku}
+          />
+        ) : (
+          <Flex
+            py="3"
+            sx={{
+              display: 'inline-flex'
+            }}
+          >
+            <ProductQuantitySelector
+              handleChange={value => setSelectedQuantity(parseInt(value))}
+            />
+            <ProductAddToCartButton
+              sx={{
+                marginLeft: ['12px', null, '16px']
+              }}
+              price={price}
+              quantity={selectedQuantity}
+              regularPrice={regularPrice}
+              sku={sku}
+            />
+          </Flex>
         )}
       </Box>
     </Card>

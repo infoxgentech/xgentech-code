@@ -9,7 +9,7 @@ import ProductOptions from '~/components/Product/Options'
 import ProductOutOfStock from '~/components/Product/OutOfStock'
 import ProductQuantitySelector from '~/components/Product/QuantitySelector'
 import SubscriptionChooser from '~/components/Subscription/Chooser'
-import { useProductVariants, useVariantAvailability } from '~/hooks'
+import { useProductVariants, useVariantAvailability } from '~/hooks';
 
 const ProductDetails = ({
   product,
@@ -53,6 +53,8 @@ const ProductDetails = ({
   useEffect(() => {
     handleVariantChange(currentVariant)
   }, [currentVariant, handleVariantChange])
+  console.log("Product",product);
+
 
   return (
     <Box

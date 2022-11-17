@@ -1,5 +1,6 @@
 import { IMAGE_FRAGMENT } from './image'
 import { QUOTE_FRAGMENT } from './quote'
+import { SUBSCRIPTION_FRAGMENT } from './subscription'
 
 const PAGE_FRAGMENT = `
   name
@@ -69,6 +70,9 @@ const PAGE_FRAGMENT = `
             name
             slug
             shortDescription
+            subscription {
+              ${SUBSCRIPTION_FRAGMENT}
+            }
             variantsCollection(limit: 5) {
               items {
                 name
