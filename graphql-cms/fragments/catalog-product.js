@@ -1,5 +1,4 @@
 import { IMAGE_FRAGMENT } from './image'
-import { SUBSCRIPTION_FRAGMENT } from './subscription'
 
 const CATALOG_PRODUCT_FRAGMENT = `
   mainImage {
@@ -35,9 +34,7 @@ const CATALOG_PRODUCT_FRAGMENT = `
       mainImage {
         ${IMAGE_FRAGMENT}
       }
-      subscription {
-        ${SUBSCRIPTION_FRAGMENT}
-      }
+      
     }
   }
 `
