@@ -2,7 +2,7 @@
 import ResponsiveImage from '~/components/Generic/Image'
 import { Box, Card, Flex, Heading } from 'theme-ui'
 import ProductAddToCartButton from '~/components/Product/AddToCartButton'
-import ProductChooseVariantButton from '~/components/Product/ChooseVariantButton'
+// import ProductChooseVariantButton from '~/components/Product/ChooseVariantButton'
 import ProductQuantitySelector from '~/components/Product/QuantitySelector'
 import ProductLink from '~/components/Product/Link'
 import SubscriptionChooser from '~/components/Subscription/Chooser'
