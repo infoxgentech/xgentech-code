@@ -36,6 +36,7 @@ const ProductAddToCartButton = ({
     }
 
     setButtonIsLoading(false)
+    window.location.href='/cart'
   }
 
   const {

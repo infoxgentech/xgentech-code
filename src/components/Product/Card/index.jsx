@@ -6,7 +6,7 @@ import ProductAddToCartButton from '~/components/Product/AddToCartButton'
 import ProductQuantitySelector from '~/components/Product/QuantitySelector'
 import ProductLink from '~/components/Product/Link'
 import SubscriptionChooser from '~/components/Subscription/Chooser'
-
+import { useState } from 'react';
 // import dynamic from 'next/dynamic';
 
 // const ProductDetails = dynamic(() => import('~/components/Product/Details'))
@@ -16,17 +16,18 @@ const ProductCard = ({ product }) => {
   const { mainImage, name, shortDescription , subscription } = product
   // const { items: variants } = product.variantsCollection
   // const [variant, setVariant] = useState(variants)
+  const [selectedQuantity, setSelectedQuantity] = useState(1)
 
   // each product have at least one variant (enforced by Contentful model)
 
 
-  const { items: optionTypes } = product.variantsCollection || []
+  // const { items: optionTypes } = product.variantsCollection || []
   const { items: variants } = product.variantsCollection || []
   
   const { price, regularPrice, size, sku } = variants[0];
 
   // get all the available choices from the variants
-
+// console.log("product",product);
   return (
     <Card
       sx={{

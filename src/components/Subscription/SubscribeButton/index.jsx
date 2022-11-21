@@ -98,7 +98,7 @@ const SubscribeButton = ({
                 height: '100%',
                 alignItems: 'center',
                 backgroundColor: 'accent',
-                padding: ['0 16px', null, '0 32px']
+
               }}
             >
               {regularPrice !== discountPrice ? (
@@ -107,7 +107,6 @@ const SubscribeButton = ({
                     height: '100%',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    padding: '10px 0'
                   }}
                 >
                   <Text

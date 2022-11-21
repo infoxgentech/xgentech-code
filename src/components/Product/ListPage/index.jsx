@@ -35,6 +35,7 @@ const ProductListPage = ({ page, collections = [] }) => {
 
   const { hero } = page
   const { heading, subheading, image } = hero
+  console.log("collectionsToShow",collectionsToShow);
 
   return (
     <Fragment>

@@ -1,4 +1,4 @@
-import { IMAGE_FRAGMENT } from './image'
+import { IMAGE_FRAGMENT } from './image';
 
 const CATALOG_PRODUCT_FRAGMENT = `
   mainImage {

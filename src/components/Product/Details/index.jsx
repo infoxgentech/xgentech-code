@@ -53,7 +53,7 @@ const ProductDetails = ({
   useEffect(() => {
     handleVariantChange(currentVariant)
   }, [currentVariant, handleVariantChange])
-  console.log("Product",product);
+  
 
 
   return (
